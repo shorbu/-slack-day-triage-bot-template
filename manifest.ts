@@ -44,8 +44,8 @@ const TriageReportFunction = DefineFunction({
  * This is where we define our Slack App. The CLI will use this to programmatically register and install the app on the workspace you choose
  */
 export default Manifest({
-  name: "TriageBot",
-  description: "Triage messages in support channels",
+  name: "__APP_NAME__",
+  description: "__REPO_URL__",
   icon: "assets/triage-bot.png",
   functions: [TriageReportFunction],
   outgoingDomains: [], // Since this app doesn't call any non-Slack APIs, we don't need to add any domains to our allow list.
